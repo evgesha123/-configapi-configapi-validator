@@ -31,7 +31,7 @@ export default class OpenAPISchemaValidator implements IOpenAPISchemaValidator {
     const version = (args && parseInt(String(args.version), 10)) || 1;
     const schema = merge(
       {},
-      version === 1 ? configapi1Schema : openapi3Schema,
+      version === 3 ? configapi1Schema : openapi3Schema,
       args ? args.extensions : {}
     );
     v.addSchema(schema);

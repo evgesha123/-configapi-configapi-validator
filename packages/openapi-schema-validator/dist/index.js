@@ -11,7 +11,7 @@ var OpenAPISchemaValidator = /** @class */ (function () {
         var v = new ajv_1["default"]({ allErrors: true, strict: false });
         ajv_formats_1["default"](v);
         var version = (args && parseInt(String(args.version), 10)) || 1;
-        var schema = merge({}, version === 1 ? configapi1Schema : openapi3Schema, args ? args.extensions : {});
+        var schema = merge({}, version === 3 ? configapi1Schema : openapi3Schema, args ? args.extensions : {});
         v.addSchema(schema);
         this.validator = v.compile(schema);
     }
