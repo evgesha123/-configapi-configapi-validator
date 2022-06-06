@@ -268,7 +268,7 @@ export namespace OpenAPIV3_1 {
 
 export namespace OpenAPIV3 {
   export interface Document<T extends {} = {}> {
-    openapi: string;
+    configapi: string;
     info: InfoObject;
     servers?: ServerObject[];
     paths: PathsObject<T>;

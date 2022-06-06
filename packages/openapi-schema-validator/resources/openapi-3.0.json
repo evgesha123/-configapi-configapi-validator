@@ -5,7 +5,7 @@
   "type": "object",
   "description": "This is the root document object of the OpenAPI document.",
   "required": [
-    "openapi",
+    "configapi",
     "info",
     "paths"
   ],
@@ -16,7 +16,7 @@
     }
   },
   "properties": {
-    "openapi": {
+    "configapi": {
       "type": "string"
     },
     "info": {
