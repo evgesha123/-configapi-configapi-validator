@@ -1,6 +1,6 @@
 module.exports = {
   constructorArgs: {
-    version: 3,
+    version: 1,
   },
 
   apiDoc: {
