@@ -1,5 +1,5 @@
 {
-  "name": "@open-api/open-api",
+  "name": "@configapi/configapi-validator",
   "version": "0.0.0",
   "description": "Various packages to build OpenAPI APIs in node",
   "main": "index.js",
