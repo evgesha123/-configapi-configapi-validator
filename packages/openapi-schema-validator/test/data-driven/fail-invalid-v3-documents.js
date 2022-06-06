@@ -171,9 +171,9 @@ module.exports = {
     {
       instancePath: '',
       keyword: 'required',
-      message: "must have required property 'openapi'",
+      message: "must have required property 'configapi'",
       params: {
-        missingProperty: 'openapi',
+        missingProperty: 'configapi',
       },
       schemaPath: '#/required',
     },

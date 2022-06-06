@@ -19,27 +19,55 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "javascript.nodejs.core.library.configured.version": "14.15.4",
-    "javascript.nodejs.core.library.typings.version": "14.18.20",
-    "last_opened_file_path": "/Users/user/WebstormProjects/openapi-validator/packages/openapi-schema-validator/test/data-driven",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/user/WebstormProjects/openapi-validator/node_modules/prettier",
-    "ts.external.directory.path": "/Users/user/WebstormProjects/openapi-validator/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.15.4&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/WebstormProjects/openapi-validator/packages/openapi-schema-validator/test/data-driven&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/user/WebstormProjects/openapi-validator/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/user/WebstormProjects/openapi-validator/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/packages/openapi-schema-validator/test/data-driven" />
       <recent name="$PROJECT_DIR$/packages/openapi-schema-validator/resources" />
       <recent name="$PROJECT_DIR$/resources" />
     </key>
+  </component>
+  <component name="RunManager" selected="npm.test-watch">
+    <configuration name="prepare" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/openapi-types/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepare" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test-watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/openapi-types/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test-watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test-watch" />
+        <item itemvalue="npm.prepare" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
