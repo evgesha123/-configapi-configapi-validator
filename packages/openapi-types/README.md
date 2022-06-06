@@ -4,9 +4,7 @@
 ## Usage
 
 ```typescript
-import { ConfigAPIV1, OpenAPIV2, OpenAPIV3, OpenAPIV3_1 } from "openapi-types";
-
-function processV1(doc: ConfigAPIV1.Document) {}
+import { OpenAPIV2, OpenAPIV3, OpenAPIV3_1 } from "openapi-types";
 
 function processV2(doc: OpenAPIV2.Document) {}
 

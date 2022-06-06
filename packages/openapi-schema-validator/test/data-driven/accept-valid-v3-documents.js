@@ -4,7 +4,7 @@ module.exports = {
   },
 
   apiDoc: {
-    configapi: '3.0.0',
+    openapi: '3.0.0',
     info: {
       version: '1.0.0',
       title: 'Swagger Petstore',

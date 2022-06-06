@@ -1,6 +1,5 @@
 import ajv, { ValidateFunction, ErrorObject } from 'ajv';
 import addFormats from 'ajv-formats';
-const configapi1Schema = require('./resources/configapi-1.0.json');
 const openapi2Schema = require('./resources/openapi-2.0.json');
 const openapi3Schema = require('./resources/openapi-3.0.json');
 const merge = require('lodash.merge');
@@ -31,7 +30,7 @@ export default class OpenAPISchemaValidator implements IOpenAPISchemaValidator {
     const version = (args && parseInt(String(args.version), 10)) || 2;
     const schema = merge(
       {},
-      version === 2 ? configapi1Schema : openapi3Schema,
+      version === 2 ? openapi2Schema : openapi3Schema,
       args ? args.extensions : {}
     );
     v.addSchema(schema);
