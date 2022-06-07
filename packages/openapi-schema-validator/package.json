@@ -30,5 +30,6 @@
     "ajv-formats": "^2.0.2",
     "lodash.merge": "^4.6.1",
     "openapi-types": "^11.0.4"
-  }
+  },
+  "gitHead": "a8c38bc0defad8ef65ae4e2ef25b21bbb0c46b21"
 }

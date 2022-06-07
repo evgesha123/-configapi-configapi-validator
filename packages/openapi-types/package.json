@@ -20,5 +20,6 @@
   },
   "repository": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-types",
   "homepage": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-types#readme",
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "a8c38bc0defad8ef65ae4e2ef25b21bbb0c46b21"
 }
