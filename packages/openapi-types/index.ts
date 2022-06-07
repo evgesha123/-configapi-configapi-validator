@@ -43,18 +43,18 @@ export namespace OpenAPIV3_1 {
   };
 
   export type Document<T extends {} = {}> = Modify<
-    Omit<OpenAPIV3.Document<T>, 'paths' | 'components'>,
+    Omit<OpenAPIV3.Document<T>, "paths" | "components">,
     {
       info: InfoObject;
       jsonSchemaDialect?: string;
       servers?: ServerObject[];
     } & (
-      | (Pick<PathsWebhooksComponents<T>, 'paths'> &
-          Omit<Partial<PathsWebhooksComponents<T>>, 'paths'>)
-      | (Pick<PathsWebhooksComponents<T>, 'webhooks'> &
-          Omit<Partial<PathsWebhooksComponents<T>>, 'webhooks'>)
-      | (Pick<PathsWebhooksComponents<T>, 'components'> &
-          Omit<Partial<PathsWebhooksComponents<T>>, 'components'>)
+      | (Pick<PathsWebhooksComponents<T>, "paths"> &
+          Omit<Partial<PathsWebhooksComponents<T>>, "paths">)
+      | (Pick<PathsWebhooksComponents<T>, "webhooks"> &
+          Omit<Partial<PathsWebhooksComponents<T>>, "webhooks">)
+      | (Pick<PathsWebhooksComponents<T>, "components"> &
+          Omit<Partial<PathsWebhooksComponents<T>>, "components">)
     )
   >;
 
@@ -131,7 +131,7 @@ export namespace OpenAPIV3_1 {
 
   export type NonArraySchemaObjectType =
     | OpenAPIV3.NonArraySchemaObjectType
-    | 'null';
+    | "null";
 
   export type ArraySchemaObjectType = OpenAPIV3.ArraySchemaObjectType;
 
@@ -160,9 +160,9 @@ export namespace OpenAPIV3_1 {
   }
 
   export type BaseSchemaObject = Modify<
-    Omit<OpenAPIV3.BaseSchemaObject, 'nullable'>,
+    Omit<OpenAPIV3.BaseSchemaObject, "nullable">,
     {
-      examples?: OpenAPIV3.BaseSchemaObject['example'][];
+      examples?: OpenAPIV3.BaseSchemaObject["example"][];
       exclusiveMinimum?: boolean | number;
       exclusiveMaximum?: boolean | number;
       contentMediaType?: string;
@@ -253,6 +253,22 @@ export namespace OpenAPIV3_1 {
     }
   >;
 
+  export type ContentObject = Modify<
+    OpenAPIV3.ContentObject,
+    {
+      schemas?: Record<string, SchemaObject>;
+      responses?: Record<string, ReferenceObject | ResponseObject>;
+      parameters?: Record<string, ReferenceObject | ParameterObject>;
+      examples?: Record<string, ReferenceObject | ExampleObject>;
+      requestBodies?: Record<string, ReferenceObject | RequestBodyObject>;
+      headers?: Record<string, ReferenceObject | HeaderObject>;
+      securitySchemes?: Record<string, ReferenceObject | SecuritySchemeObject>;
+      links?: Record<string, ReferenceObject | LinkObject>;
+      callbacks?: Record<string, ReferenceObject | CallbackObject>;
+      pathItems?: Record<string, ReferenceObject | PathItemObject>;
+    }
+  >;
+
   export type SecuritySchemeObject = OpenAPIV3.SecuritySchemeObject;
 
   export type HttpSecurityScheme = OpenAPIV3.HttpSecurityScheme;
@@ -271,20 +287,22 @@ export namespace OpenAPIV3 {
     configapi: string;
     info: InfoObject;
     servers?: ServerObject[];
-    paths: PathsObject<T>;
-    components?: ComponentsObject;
+    paths?: PathsObject<T>;
+    content: ContentObject;
+    components: ComponentsObject;
     security?: SecurityRequirementObject[];
     tags?: TagObject[];
     externalDocs?: ExternalDocumentationObject;
-    'x-express-openapi-additional-middleware'?: (
+    "x-express-openapi-additional-middleware"?: (
       | ((request: any, response: any, next: any) => Promise<void>)
       | ((request: any, response: any, next: any) => void)
     )[];
-    'x-express-openapi-validation-strict'?: boolean;
+    "x-express-openapi-validation-strict"?: boolean;
   }
 
   export interface InfoObject {
     title: string;
+    type: string;
     description?: string;
     termsOfService?: string;
     contact?: ContactObject;
@@ -324,14 +342,14 @@ export namespace OpenAPIV3 {
   // You can use keys or values from it in TypeScript code like this:
   //     for (const method of Object.values(OpenAPIV3.HttpMethods)) { … }
   export enum HttpMethods {
-    GET = 'get',
-    PUT = 'put',
-    POST = 'post',
-    DELETE = 'delete',
-    OPTIONS = 'options',
-    HEAD = 'head',
-    PATCH = 'patch',
-    TRACE = 'trace',
+    GET = "get",
+    PUT = "put",
+    POST = "post",
+    DELETE = "delete",
+    OPTIONS = "options",
+    HEAD = "head",
+    PATCH = "patch",
+    TRACE = "trace",
   }
 
   export type PathItemObject<T extends {} = {}> = {
@@ -385,12 +403,33 @@ export namespace OpenAPIV3 {
     content?: { [media: string]: MediaTypeObject };
   }
   export type NonArraySchemaObjectType =
-    | 'boolean'
-    | 'object'
-    | 'number'
-    | 'string'
-    | 'integer';
-  export type ArraySchemaObjectType = 'array';
+    | "boolean"
+    | "object"
+    | "number"
+    | "string"
+    | "integer";
+  export type ArraySchemaObjectType = "array";
+
+  export type ContentSchemaObject = ContentIntSchemaObject;
+
+  export type ComponentsObjectSchema = ComponentsIntObjectSchema;
+
+  export interface ComponentsIntObjectSchema extends BaseSchemaObject {
+    type: object;
+    properties: {
+      [name: string]: ReferenceObject | SchemaObject;
+    };
+    required: string[];
+  }
+
+  export interface ContentIntSchemaObject extends BaseSchemaObject {
+    type: object;
+    properties: {
+      [name: string]: ReferenceObject | SchemaObject;
+    };
+    required: string[];
+  }
+
   export type SchemaObject = ArraySchemaObject | NonArraySchemaObject;
 
   export interface ArraySchemaObject extends BaseSchemaObject {
@@ -516,16 +555,13 @@ export namespace OpenAPIV3 {
     [name: string]: string[];
   }
 
+  // Custom Content Object
+  export interface ContentObject {
+    schema: { [key: string]: ReferenceObject | ContentSchemaObject };
+  }
+
   export interface ComponentsObject {
-    schemas?: { [key: string]: ReferenceObject | SchemaObject };
-    responses?: { [key: string]: ReferenceObject | ResponseObject };
-    parameters?: { [key: string]: ReferenceObject | ParameterObject };
-    examples?: { [key: string]: ReferenceObject | ExampleObject };
-    requestBodies?: { [key: string]: ReferenceObject | RequestBodyObject };
-    headers?: { [key: string]: ReferenceObject | HeaderObject };
-    securitySchemes?: { [key: string]: ReferenceObject | SecuritySchemeObject };
-    links?: { [key: string]: ReferenceObject | LinkObject };
-    callbacks?: { [key: string]: ReferenceObject | CallbackObject };
+    schemas: { [key: string]: ComponentsObjectSchema };
   }
 
   export type SecuritySchemeObject =
@@ -535,21 +571,21 @@ export namespace OpenAPIV3 {
     | OpenIdSecurityScheme;
 
   export interface HttpSecurityScheme {
-    type: 'http';
+    type: "http";
     description?: string;
     scheme: string;
     bearerFormat?: string;
   }
 
   export interface ApiKeySecurityScheme {
-    type: 'apiKey';
+    type: "apiKey";
     description?: string;
     name: string;
     in: string;
   }
 
   export interface OAuth2SecurityScheme {
-    type: 'oauth2';
+    type: "oauth2";
     description?: string;
     flows: {
       implicit?: {
@@ -577,7 +613,7 @@ export namespace OpenAPIV3 {
   }
 
   export interface OpenIdSecurityScheme {
-    type: 'openIdConnect';
+    type: "openIdConnect";
     description?: string;
     openIdConnectUrl: string;
   }
@@ -606,11 +642,11 @@ export namespace OpenAPIV2 {
     securityDefinitions?: SecurityDefinitionsObject;
     swagger: string;
     tags?: TagObject[];
-    'x-express-openapi-additional-middleware'?: (
+    "x-express-openapi-additional-middleware"?: (
       | ((request: any, response: any, next: any) => Promise<void>)
       | ((request: any, response: any, next: any) => void)
     )[];
-    'x-express-openapi-validation-strict'?: boolean;
+    "x-express-openapi-validation-strict"?: boolean;
   }
 
   export interface TagObject {
@@ -620,16 +656,16 @@ export namespace OpenAPIV2 {
   }
 
   export interface SecuritySchemeObjectBase {
-    type: 'basic' | 'apiKey' | 'oauth2';
+    type: "basic" | "apiKey" | "oauth2";
     description?: string;
   }
 
   export interface SecuritySchemeBasic extends SecuritySchemeObjectBase {
-    type: 'basic';
+    type: "basic";
   }
 
   export interface SecuritySchemeApiKey extends SecuritySchemeObjectBase {
-    type: 'apiKey';
+    type: "apiKey";
     name: string;
     in: string;
   }
@@ -645,33 +681,33 @@ export namespace OpenAPIV2 {
   }
 
   export interface SecuritySchemeOauth2Base extends SecuritySchemeObjectBase {
-    type: 'oauth2';
-    flow: 'implicit' | 'password' | 'application' | 'accessCode';
+    type: "oauth2";
+    flow: "implicit" | "password" | "application" | "accessCode";
     scopes: ScopesObject;
   }
 
   export interface SecuritySchemeOauth2Implicit
     extends SecuritySchemeOauth2Base {
-    flow: 'implicit';
+    flow: "implicit";
     authorizationUrl: string;
   }
 
   export interface SecuritySchemeOauth2AccessCode
     extends SecuritySchemeOauth2Base {
-    flow: 'accessCode';
+    flow: "accessCode";
     authorizationUrl: string;
     tokenUrl: string;
   }
 
   export interface SecuritySchemeOauth2Password
     extends SecuritySchemeOauth2Base {
-    flow: 'password';
+    flow: "password";
     tokenUrl: string;
   }
 
   export interface SecuritySchemeOauth2Application
     extends SecuritySchemeOauth2Base {
-    flow: 'application';
+    flow: "application";
     tokenUrl: string;
   }
 
@@ -761,13 +797,13 @@ export namespace OpenAPIV2 {
   // You can use keys or values from it in TypeScript code like this:
   //     for (const method of Object.values(OpenAPIV2.HttpMethods)) { … }
   export enum HttpMethods {
-    GET = 'get',
-    PUT = 'put',
-    POST = 'post',
-    DELETE = 'delete',
-    OPTIONS = 'options',
-    HEAD = 'head',
-    PATCH = 'patch',
+    GET = "get",
+    PUT = "put",
+    POST = "post",
+    DELETE = "delete",
+    OPTIONS = "options",
+    HEAD = "head",
+    PATCH = "patch",
   }
 
   export type PathItemObject<T extends {} = {}> = {
