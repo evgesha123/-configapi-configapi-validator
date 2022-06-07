@@ -189,8 +189,8 @@
     "content": {
       "type": "object",
       "properties": {
-        "schemas": {
-          "$ref": "#/definitions/schemasOrReferences"
+        "schema": {
+          "$ref": "#/definitions/schema"
         }
       }
     },

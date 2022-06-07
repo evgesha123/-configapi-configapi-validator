@@ -7,162 +7,156 @@ module.exports = {
     swagger: '3.0.0',
     info: {
       version: '1.0.0',
-      title: 'Swagger Petstore',
+      description: 'Some config description',
+      title: 'Title',
+      contact: {
+        name: 'name',
+        email: 'email',
+      },
       license: {
         name: 'MIT',
       },
     },
-    servers: [
-      {
-        url: 'http://petstore.swagger.io/v1',
-      },
-    ],
-    paths: {
-      '/pets': {
-        get: {
-          summary: 'List all pets',
-          operationId: 'listPets',
-          tags: ['pets'],
-          parameters: [
-            {
-              name: 'limit',
-              in: 'query',
-              description: 'How many items to return at one time (max 100)',
-              required: false,
-              schema: {
-                type: 'integer',
-                format: 'int32',
-              },
-            },
-          ],
-          responses: {
-            '200': {
-              description: 'An paged array of pets',
-              headers: {
-                'x-next': {
-                  description: 'A link to the next page of responses',
-                  schema: {
-                    type: 'string',
-                  },
-                },
-              },
-              content: {
-                'application/json': {
-                  schema: {
-                    $ref: '#/components/schemas/Pets',
-                  },
-                },
-              },
-            },
-            default: {
-              description: 'unexpected error',
-              content: {
-                'application/json': {
-                  schema: {
-                    $ref: '#/components/schemas/Error',
-                  },
-                },
-              },
-            },
-          },
+    content: {
+      schema : {
+        "ads": {
+          $ref: '#/components/schemas/Ads',
         },
-        post: {
-          summary: 'Create a pet',
-          operationId: 'createPets',
-          tags: ['pets'],
-          responses: {
-            '201': {
-              description: 'Null response',
-            },
-            default: {
-              description: 'unexpected error',
-              content: {
-                'application/json': {
-                  schema: {
-                    $ref: '#/components/schemas/Error',
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-      '/pets/{petId}': {
-        get: {
-          summary: 'Info for a specific pet',
-          operationId: 'showPetById',
-          tags: ['pets'],
-          parameters: [
-            {
-              name: 'petId',
-              in: 'path',
-              required: true,
-              description: 'The id of the pet to retrieve',
-              schema: {
-                type: 'string',
-              },
-            },
-          ],
-          responses: {
-            '200': {
-              description: 'Expected response to a valid request',
-              content: {
-                'application/json': {
-                  schema: {
-                    $ref: '#/components/schemas/Pets',
-                  },
-                },
-              },
-            },
-            default: {
-              description: 'unexpected error',
-              content: {
-                'application/json': {
-                  schema: {
-                    $ref: '#/components/schemas/Error',
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
+        required: ['ads'],
+      }
     },
     components: {
       schemas: {
-        Pet: {
-          required: ['id', 'name'],
+        Ads: {
+          required: [
+            'bannerAdUnit',
+            'interstitialAdUnit',
+            'rewardedAdUnit',
+            'log',
+            'delayInterstitialInterstitial',
+            'delayRewardedInterstitial',
+            'isCreativeDebuggerEnabled',
+            'isShowMediationDebugger',
+          ],
           properties: {
-            id: {
-              type: 'integer',
-              format: 'int64',
+            bannerAdUnit: {
+              type: 'string',
+              example: 'c1de17789539fe68',
             },
+            interstitialAdUnit: {
+              type: "string",
+              example: "de52505b388c73d9",
+            },
+            rewardedAdUnit: {
+              type: "string",
+              example: "159bcdb837df30dc",
+            },
+            log: {
+              type: 'integer',
+              enum: [0, 1],
+            },
+            delayInterstitialInterstitial: {
+              type: 'integer',
+              example: 30,
+            },
+            delayRewardedInterstitial: {
+              type: 'integer',
+              example: 1,
+            },
+            isCreativeDebuggerEnabled: {
+              type: 'integer',
+              enum: [0, 1],
+            },
+            isShowMediationDebugger: {
+              type: 'integer',
+              enum: [0, 1],
+            },
+            banner : {
+              $ref: '#/components/schemas/BannerInterReward'
+            },
+            interstitial: {
+              $ref: '#/components/schemas/BannerInterReward'
+            },
+            rewarded: {
+              $ref: '#/components/schemas/BannerInterReward'
+            },
+            settings: {
+              $ref: '#/components/schemas/Settings'
+            }
+          },
+        },
+        BannerInterReward: {
+          type: 'object',
+          properties: {
+            bidders: {
+              type: "array",
+              items: {
+                $ref: '#/components/schemas/Bidder'
+              },
+            },
+            waterfallsDelays: {
+              type: "array",
+              items: {
+                type: "integer",
+                example: 30,
+              }
+            },
+            delayLongwaterfall: {
+              type: "integer",
+              example: 30
+            }
+          }
+        },
+        Bidder: {
+          type: 'object',
+          required: ['name', 'params'],
+          properties: {
             name: {
-              type: 'string',
+              type: "string",
+              example: 'amazon',
             },
-            tag: {
-              type: 'string',
+            params: {
+              $ref: '#/components/schemas/Bidder'
             },
-          },
+          }
         },
-        Pets: {
-          type: 'array',
-          items: {
-            $ref: '#/components/schemas/Pet',
-          },
-        },
-        Error: {
-          required: ['code', 'message'],
+        BidderParams: {
+          type: 'object',
+          required: [
+            'appKey',
+            'slotUUID',
+            'isTest',
+            'limitRequest',
+          ],
           properties: {
-            code: {
-              type: 'integer',
-              format: 'int32',
+            appKey: {
+              type: "string",
+              example: '8d5d66458587426aae9ac27e84f49718',
             },
-            message: {
-              type: 'string',
+            slotUUID: {
+              type: "string",
+              example: 'd055bef4-8671-4e6c-8e52-d710e6ecef3b',
             },
-          },
+            isTest: {
+              type: "integer",
+              enum: [0, 1],
+            },
+            limitRequest: {
+              type: "integer",
+              example: 15,
+            },
+          }
         },
+        Settings: {
+          type: 'object',
+          required: ['isBannerAdaptive'],
+          properties: {
+            isBannerAdaptive: {
+              type: 'integer',
+              enum: [0, 1],
+            }
+          }
+        }
       },
     },
   },

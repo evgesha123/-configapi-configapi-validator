@@ -412,9 +412,7 @@ export declare namespace OpenAPIV3 {
         [name: string]: string[];
     }
     interface ContentObject {
-        schema: {
-            [key: string]: ReferenceObject | ContentSchemaObject;
-        };
+        schema: ReferenceObject | ContentSchemaObject;
     }
     interface ComponentsObject {
         schemas: {

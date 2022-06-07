@@ -557,7 +557,7 @@ export namespace OpenAPIV3 {
 
   // Custom Content Object
   export interface ContentObject {
-    schema: { [key: string]: ReferenceObject | ContentSchemaObject };
+    schema: ReferenceObject | ContentSchemaObject;
   }
 
   export interface ComponentsObject {
