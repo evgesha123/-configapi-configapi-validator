@@ -30,9 +30,6 @@
       },
       "uniqueItems": true
     },
-    "paths": {
-      "$ref": "#/definitions/paths"
-    },
     "components": {
       "$ref": "#/definitions/components"
     },
@@ -232,148 +229,6 @@
         },
         "links": {
           "$ref": "#/definitions/linksOrReferences"
-        },
-        "callbacks": {
-          "$ref": "#/definitions/callbacksOrReferences"
-        }
-      }
-    },
-    "paths": {
-      "type": "object",
-      "description": "Holds the relative paths to the individual endpoints and their operations. The path is appended to the URL from the `Server Object` in order to construct the full URL.  The Paths MAY be empty, due to ACL constraints.",
-      "additionalProperties": false,
-      "patternProperties": {
-        "^/": {
-          "$ref": "#/definitions/pathItem"
-        },
-        "^x-": {
-          "$ref": "#/definitions/specificationExtension"
-        }
-      }
-    },
-    "pathItem": {
-      "type": "object",
-      "description": "Describes the operations available on a single path. A Path Item MAY be empty, due to ACL constraints. The path itself is still exposed to the documentation viewer but they will not know which operations and parameters are available.",
-      "additionalProperties": false,
-      "patternProperties": {
-        "^x-": {
-          "$ref": "#/definitions/specificationExtension"
-        }
-      },
-      "properties": {
-        "$ref": {
-          "type": "string"
-        },
-        "summary": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "get": {
-          "$ref": "#/definitions/operation"
-        },
-        "put": {
-          "$ref": "#/definitions/operation"
-        },
-        "post": {
-          "$ref": "#/definitions/operation"
-        },
-        "delete": {
-          "$ref": "#/definitions/operation"
-        },
-        "options": {
-          "$ref": "#/definitions/operation"
-        },
-        "head": {
-          "$ref": "#/definitions/operation"
-        },
-        "patch": {
-          "$ref": "#/definitions/operation"
-        },
-        "trace": {
-          "$ref": "#/definitions/operation"
-        },
-        "servers": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/server"
-          },
-          "uniqueItems": true
-        },
-        "parameters": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/parameterOrReference"
-          },
-          "uniqueItems": true
-        }
-      }
-    },
-    "operation": {
-      "type": "object",
-      "description": "Describes a single API operation on a path.",
-      "required": [
-        "responses"
-      ],
-      "additionalProperties": false,
-      "patternProperties": {
-        "^x-": {
-          "$ref": "#/definitions/specificationExtension"
-        }
-      },
-      "properties": {
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "uniqueItems": true
-        },
-        "summary": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "externalDocs": {
-          "$ref": "#/definitions/externalDocs"
-        },
-        "operationId": {
-          "type": "string"
-        },
-        "parameters": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/parameterOrReference"
-          },
-          "uniqueItems": true
-        },
-        "requestBody": {
-          "$ref": "#/definitions/requestBodyOrReference"
-        },
-        "responses": {
-          "$ref": "#/definitions/responses"
-        },
-        "callbacks": {
-          "$ref": "#/definitions/callbacksOrReferences"
-        },
-        "deprecated": {
-          "type": "boolean"
-        },
-        "security": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/securityRequirement"
-          },
-          "uniqueItems": true
-        },
-        "servers": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/server"
-          },
-          "uniqueItems": true
         }
       }
     },
@@ -570,19 +425,6 @@
         },
         "links": {
           "$ref": "#/definitions/linksOrReferences"
-        }
-      }
-    },
-    "callback": {
-      "type": "object",
-      "description": "A map of possible out-of band callbacks related to the parent operation. Each value in the map is a Path Item Object that describes a set of requests that may be initiated by the API provider and the expected responses. The key value used to identify the callback object is an expression, evaluated at runtime, that identifies a URL to use for the callback operation.",
-      "additionalProperties": false,
-      "patternProperties": {
-        "^": {
-          "$ref": "#/definitions/pathItem"
-        },
-        "^x-": {
-          "$ref": "#/definitions/specificationExtension"
         }
       }
     },
@@ -1031,16 +873,6 @@
         }
       ]
     },
-    "callbackOrReference": {
-      "oneOf": [
-        {
-          "$ref": "#/definitions/callback"
-        },
-        {
-          "$ref": "#/definitions/reference"
-        }
-      ]
-    },
     "exampleOrReference": {
       "oneOf": [
         {
@@ -1125,12 +957,6 @@
       "type": "object",
       "additionalProperties": {
         "$ref": "#/definitions/anyOrExpression"
-      }
-    },
-    "callbacksOrReferences": {
-      "type": "object",
-      "additionalProperties": {
-        "$ref": "#/definitions/callbackOrReference"
       }
     },
     "encodings": {

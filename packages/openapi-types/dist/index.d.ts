@@ -165,7 +165,6 @@ export declare namespace OpenAPIV3 {
         configapi: string;
         info: InfoObject;
         servers?: ServerObject[];
-        paths?: PathsObject<T>;
         content: ContentObject;
         components: ComponentsObject;
         security?: SecurityRequirementObject[];
