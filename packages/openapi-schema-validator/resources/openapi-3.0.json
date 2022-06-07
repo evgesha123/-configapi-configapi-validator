@@ -1,13 +1,14 @@
 {
-  "title": "A JSON Schema for OpenAPI 3.0.",
+  "title": "A JSON Schema for custom ConfigAPI from OpenAPI 3.0.",
   "$id": "http://openapis.org/v3/schema.json#",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
-  "description": "This is the root document object of the OpenAPI document.",
+  "description": "This is the root document object of the ConfigAPI document.",
   "required": [
     "configapi",
     "info",
-    "paths"
+    "content",
+    "components"
   ],
   "additionalProperties": false,
   "patternProperties": {
@@ -34,6 +35,9 @@
     },
     "components": {
       "$ref": "#/definitions/components"
+    },
+    "content": {
+      "$ref": "#/definitions/content"
     },
     "security": {
       "type": "array",
@@ -179,6 +183,14 @@
         },
         "description": {
           "type": "string"
+        }
+      }
+    },
+    "content": {
+      "type": "object",
+      "properties": {
+        "schemas": {
+          "$ref": "#/definitions/schemasOrReferences"
         }
       }
     },

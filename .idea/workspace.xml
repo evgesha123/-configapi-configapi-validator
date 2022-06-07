@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-2fe53a84b4a9174d3d7de7ae7cb1c3e139b45e901f5e31f19b3dae52caf5020e.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-2fe53a84b4a9174d3d7de7ae7cb1c3e139b45e901f5e31f19b3dae52caf5020e.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/resources/openapi-2.0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/resources/openapi-3.0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "javascript.nodejs.core.library.configured.version": "14.15.4",
     "javascript.nodejs.core.library.typings.version": "14.18.20",
-    "last_opened_file_path": "/Users/user/WebstormProjects/openapi-validator/packages",
+    "last_opened_file_path": "/Users/user/WebstormProjects/openapi-validator",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -41,6 +45,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/packages" />
       <recent name="$PROJECT_DIR$/packages/openapi-schema-validator/test/data-driven" />
       <recent name="$PROJECT_DIR$/packages/openapi-schema-validator/resources" />
@@ -101,9 +106,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.prepare (1)" />
-        <item itemvalue="npm.prepare" />
         <item itemvalue="npm.publish" />
         <item itemvalue="npm.bootstrap" />
+        <item itemvalue="npm.prepare" />
         <item itemvalue="npm.cover" />
       </list>
     </recent_temporary>

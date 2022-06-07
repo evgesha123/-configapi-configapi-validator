@@ -2356,8 +2356,8 @@
         "../../../node_modules/@types/node/util.d.ts"
       ],
       "../index.ts": [
-        "../node_modules/ajv/dist/ajv.d.ts",
-        "../node_modules/openapi-types/dist/index.d.ts"
+        "../../openapi-types/dist/index.d.ts",
+        "../node_modules/ajv/dist/ajv.d.ts"
       ],
       "../node_modules/ajv-formats/dist/formats.d.ts": [
         "../../../node_modules/@types/node/fs.d.ts",
