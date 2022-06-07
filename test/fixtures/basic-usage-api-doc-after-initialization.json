@@ -4,183 +4,160 @@
   "definitions": {
     "Error": {
       "additionalProperties": true
-    },
-    "User": {
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "friends": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/User"
-          }
-        }
-
-      },
-      "required": [
-        "name"
-      ]
     }
   },
   "info": {
-    "title": "express-openapi sample project",
-    "version": "3.0.0"
+    "version": "1.0.0",
+    "description": "Some config description",
+    "title": "Title",
+    "type": "ad",
+    "contact": {
+      "name": "name",
+      "email": "email"
+    }
   },
-  "paths": {
-    "/apiDocs": {
-      "get": {
-        "description": "Returns the requested apiDoc",
-        "operationId": "getApiDoc",
-        "parameters": [
-          {
-            "description": "The type of apiDoc to return.",
-            "enum": [
-              "apiDoc",
-              "operationDoc"
-            ],
-            "in": "query",
-            "name": "type",
-            "type": "string"
-          }
+  "content" : {
+    "schema" : {
+      "ads": {
+        "$ref": "#/components/schemas/Ads"
+      },
+      "required": [
+        "ads"
+      ]
+    }
+  },
+  "components": {
+    "schemas": {
+      "Ads": {
+        "required": [
+          "bannerAdUnit",
+          "interstitialAdUnit",
+          "rewardedAdUnit",
+          "log",
+          "delayInterstitialInterstitial",
+          "delayRewardedInterstitial",
+          "isCreativeDebuggerEnabled",
+          "isShowMediationDebugger"
         ],
-        "responses": {
-          "200": {
-            "description": "The requested apiDoc.",
-            "schema": {
-              "type": "object"
+        "properties": {
+          "bannerAdUnit": {
+            "type": "string",
+            "example": "c1de17789539fe68"
+          },
+          "interstitialAdUnit": {
+            "type": "string",
+            "example": "de52505b388c73d9"
+          },
+          "rewardedAdUnit": {
+            "type": "string",
+            "example": "159bcdb837df30dc"
+          },
+          "log": {
+            "type": "integer",
+            "enum": [0, 1]
+          },
+          "delayInterstitialInterstitial": {
+            "type": "integer",
+            "example": 30
+          },
+          "delayRewardedInterstitial": {
+            "type": "integer",
+            "example": 1
+          },
+          "isCreativeDebuggerEnabled": {
+            "type": "integer",
+            "enum": [0, 1]
+          },
+          "isShowMediationDebugger": {
+            "type": "integer",
+            "enum": [0, 1]
+          },
+          "banner" : {
+            "$ref": "#/components/schemas/BannerInterReward"
+          },
+          "interstitial": {
+            "$ref": "#/components/schemas/BannerInterReward"
+          },
+          "rewarded": {
+            "$ref": "#/components/schemas/BannerInterReward"
+          },
+          "settings": {
+            "$ref": "#/components/schemas/Settings"
+          }
+        }
+      },
+      "BannerInterReward": {
+        "type": "object",
+        "properties": {
+          "bidders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Bidder"
             }
           },
-          "default": {
-            "description": "The requested apiDoc."
-          }
-        }
-      },
-      "parameters": []
-    },
-    "/users": {
-      "parameters": [],
-      "delete": {
-        "description": "Delete users.",
-        "operationId": "deleteUsers",
-        "tags": ["users"],
-        "parameters": [],
-        "responses": {
-          "204": {
-            "description": "Users were successfully deleted."
-          }
-        }
-      },
-      "post": {
-        "description": "Create a new user.",
-        "operationId": "createUser",
-        "tags": [
-          "creating",
-          "users"
-        ],
-        "parameters": [],
-        "responses": {
-          "default": {
-            "description": "Unexpected error",
-            "schema": {
-              "$ref": "#/definitions/Error"
+          "waterfallsDelays": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "example": 30
             }
+          },
+          "delayLongwaterfall": {
+            "type": "integer",
+            "example": 30
+          }
+        }
+      },
+      "Bidder": {
+        "type": "object",
+        "required": ["name", "params"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "amazon"
+          },
+          "params": {
+            "$ref": "#/components/schemas/Bidder"
+          }
+        }
+      },
+      "BidderParams": {
+        "type": "object",
+        "required": [
+          "appKey",
+          "slotUUID",
+          "isTest",
+          "limitRequest"
+        ],
+        "properties": {
+          "appKey": {
+            "type": "string",
+            "example": "8d5d66458587426aae9ac27e84f49718"
+          },
+          "slotUUID": {
+            "type": "string",
+            "example": "d055bef4-8671-4e6c-8e52-d710e6ecef3b"
+          },
+          "isTest": {
+            "type": "integer",
+            "enum": [0, 1]
+          },
+          "limitRequest": {
+            "type": "integer",
+            "example": 15
+          }
+        }
+      },
+      "Settings": {
+        "type": "object",
+        "required": ["isBannerAdaptive"],
+        "properties": {
+          "isBannerAdaptive": {
+            "type": "integer",
+            "enum": [0, 1]
           }
         }
       }
-    },
-    "/users/{id}": {
-      "parameters": [
-        {
-          "description": "Fred's age.",
-          "in": "path",
-          "name": "id",
-          "required": true,
-          "type": "string"
-        }
-      ],
-      "get": {
-        "description": "Retrieve a user.",
-        "operationId": "getUser",
-        "parameters": [
-          {
-            "description": "The name of this person.  It may only be \"fred\".",
-            "in": "query",
-            "name": "name",
-            "pattern": "^fred$",
-            "type": "string"
-          },
-          {
-            "description": "Fred's age.",
-            "in": "path",
-            "name": "id",
-            "required": true,
-            "type": "integer"
-          },
-          {
-            "default": 80,
-            "description": "Fred's age.",
-            "in": "query",
-            "name": "age",
-            "type": "integer"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Requested user",
-            "schema": {
-              "$ref": "#/definitions/User"
-            }
-          },
-          "default": {
-            "description": "Unexpected error",
-            "schema": {
-              "$ref": "#/definitions/Error"
-            }
-          }
-        },
-        "tags": [
-          "fooey",
-          "users"
-        ]
-      },
-      "post": {
-        "description": "Create a user.",
-        "operationId": "createUser",
-        "parameters": [
-          {
-            "in": "body",
-            "name": "user",
-            "schema": {
-              "$ref": "#/definitions/User"
-            }
-          }
-        ],
-        "responses": {
-          "default": {
-            "description": "Unexpected error",
-            "schema": {
-              "$ref": "#/definitions/Error"
-            }
-          }
-        },
-        "tags": [
-          "users"
-        ]
-      }
     }
-  },
-  "swagger": "2.0",
-  "tags": [
-    {
-      "name": "creating"
-    },
-    {
-      "name": "fooey"
-    },
-    {
-      "description": "Everything users",
-      "name": "users"
-    }
-  ]
+  }
 }

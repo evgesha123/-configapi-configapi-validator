@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="" />
+    <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/basic-usage-api-doc-after-initialization.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/basic-usage-api-doc-after-initialization.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fixtures/basic-usage-api-doc-with-extension.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/basic-usage-api-doc-with-extension.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +47,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.publish">
+  <component name="RunManager" selected="npm.bootstrap">
     <configuration name="bootstrap" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -96,10 +100,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.bootstrap" />
         <item itemvalue="npm.publish" />
         <item itemvalue="npm.prepare (1)" />
         <item itemvalue="npm.prepare" />
-        <item itemvalue="npm.bootstrap" />
         <item itemvalue="npm.cover" />
       </list>
     </recent_temporary>
