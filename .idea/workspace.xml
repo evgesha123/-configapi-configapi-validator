@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/test/data-driven/accept-valid-v3-documents.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/test/data-driven/accept-valid-v3-documents.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/test/data-driven/fail-invalid-v3-documents.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/test/data-driven/fail-invalid-v3-documents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -17,11 +17,11 @@ export declare namespace OpenAPIV3_1 {
         webhooks: Record<string, PathItemObject | ReferenceObject>;
         components: ComponentsObject;
     };
-    export type Document<T extends {} = {}> = Modify<Omit<OpenAPIV3.Document<T>, "paths" | "components">, {
+    export type Document<T extends {} = {}> = Modify<Omit<OpenAPIV3.Document<T>, "components">, {
         info: InfoObject;
         jsonSchemaDialect?: string;
         servers?: ServerObject[];
-    } & ((Pick<PathsWebhooksComponents<T>, "paths"> & Omit<Partial<PathsWebhooksComponents<T>>, "paths">) | (Pick<PathsWebhooksComponents<T>, "webhooks"> & Omit<Partial<PathsWebhooksComponents<T>>, "webhooks">) | (Pick<PathsWebhooksComponents<T>, "components"> & Omit<Partial<PathsWebhooksComponents<T>>, "components">))>;
+    } & ((Pick<PathsWebhooksComponents<T>, "webhooks"> & Omit<Partial<PathsWebhooksComponents<T>>, "webhooks">) | (Pick<PathsWebhooksComponents<T>, "components"> & Omit<Partial<PathsWebhooksComponents<T>>, "components">))>;
     export type InfoObject = Modify<OpenAPIV3.InfoObject, {
         summary?: string;
         license?: LicenseObject;

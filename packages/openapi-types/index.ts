@@ -43,14 +43,12 @@ export namespace OpenAPIV3_1 {
   };
 
   export type Document<T extends {} = {}> = Modify<
-    Omit<OpenAPIV3.Document<T>, "paths" | "components">,
+    Omit<OpenAPIV3.Document<T>, "components">,
     {
       info: InfoObject;
       jsonSchemaDialect?: string;
       servers?: ServerObject[];
     } & (
-      | (Pick<PathsWebhooksComponents<T>, "paths"> &
-          Omit<Partial<PathsWebhooksComponents<T>>, "paths">)
       | (Pick<PathsWebhooksComponents<T>, "webhooks"> &
           Omit<Partial<PathsWebhooksComponents<T>>, "webhooks">)
       | (Pick<PathsWebhooksComponents<T>, "components"> &

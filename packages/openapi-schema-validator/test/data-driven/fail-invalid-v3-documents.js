@@ -9,6 +9,7 @@ module.exports = {
       version: '1.0.0',
       description: 'Some config description',
       title: 'Title',
+      type: 'ad',
       contact: {
         name: 'name',
         email: 'email',
