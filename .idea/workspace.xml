@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-2fe53a84b4a9174d3d7de7ae7cb1c3e139b45e901f5e31f19b3dae52caf5020e.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-2fe53a84b4a9174d3d7de7ae7cb1c3e139b45e901f5e31f19b3dae52caf5020e.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -13,7 +13,7 @@
     "test-watch": "../../bin/tsc && ../../bin/mocha --watch-extensions ts -w",
     "test": "../../bin/mocha"
   },
-  "repository": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/tree/master/packages/openapi-schema-validator",
+  "repository": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-schema-validator",
   "keywords": [
     "openapi",
     "schema",
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/issues"
   },
-  "homepage": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/tree/master/packages/openapi-schema-validator#readme",
+  "homepage": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-schema-validator#readme",
   "dependencies": {
     "ajv": "^8.1.0",
     "ajv-formats": "^2.0.2",
