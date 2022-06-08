@@ -45,7 +45,7 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.bootstrap">
+  <component name="RunManager" selected="npm.publish">
     <configuration name="bootstrap" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -98,9 +98,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.publish" />
         <item itemvalue="npm.bootstrap" />
         <item itemvalue="npm.clean" />
-        <item itemvalue="npm.publish" />
         <item itemvalue="npm.prepare (1)" />
         <item itemvalue="npm.prepare" />
       </list>
@@ -119,6 +119,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
