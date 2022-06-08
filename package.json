@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator.git"
+    "url": "git+https://github.com/evgesha123/-configapi-configapi-validator.git"
   },
   "keywords": [
     "openapi",
@@ -24,9 +24,9 @@
   "author": "Joseph Spencer, copied by Eugene Leonov",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/issues"
+    "url": "https://github.com/evgesha123/-configapi-configapi-validator/issues"
   },
-  "homepage": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator",
+  "homepage": "https://github.com/evgesha123/-configapi-configapi-validator",
   "devDependencies": {
     "@types/mocha": "^7.0.0",
     "@types/node": "14.0.4",

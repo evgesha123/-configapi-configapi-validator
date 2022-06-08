@@ -16,10 +16,10 @@
   ],
   "author": "Joseph Spencer",
   "bugs": {
-    "url": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-types#readme/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aopenapi-types"
+    "url": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types#readme/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aopenapi-types"
   },
-  "repository": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-types",
-  "homepage": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-types#readme",
+  "repository": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types",
+  "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types#readme",
   "license": "MIT",
   "gitHead": "a8c38bc0defad8ef65ae4e2ef25b21bbb0c46b21"
 }

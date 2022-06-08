@@ -13,7 +13,7 @@
     "test-watch": "../../bin/tsc && ../../bin/mocha --watch-extensions ts -w",
     "test": "../../bin/mocha"
   },
-  "repository": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-schema-validator",
+  "repository": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-schema-validator",
   "keywords": [
     "openapi",
     "schema",
@@ -22,9 +22,9 @@
   "author": "Joseph Spencer",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/issues"
+    "url": "https://github.com/evgesha123/-configapi-configapi-validator/issues"
   },
-  "homepage": "https://gitlab.x-flow.app/happycolor/tools/forks/openapi-validator/blob/master/packages/openapi-schema-validator#readme",
+  "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-schema-validator#readme",
   "dependencies": {
     "ajv": "^8.1.0",
     "ajv-formats": "^2.0.2",
