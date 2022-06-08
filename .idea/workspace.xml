@@ -3,21 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/resources/openapi-3.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/resources/openapi-3.0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/dist/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/dist/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/dist/index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/fixtures/with-external-schema-references-api-doc-after-initialization.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/fixtures/with-external-schema-references-api-doc-after-initialization.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,21 +21,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.15.4&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/user/WebstormProjects/openapi-validator&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/user/WebstormProjects/openapi-validator/node_modules/prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/user/WebstormProjects/openapi-validator/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "javascript.nodejs.core.library.configured.version": "14.15.4",
+    "javascript.nodejs.core.library.typings.version": "14.18.20",
+    "last_opened_file_path": "/Users/user/WebstormProjects/-configapi-configapi-validator",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/user/WebstormProjects/openapi-validator/node_modules/prettier",
+    "ts.external.directory.path": "/Users/user/WebstormProjects/-configapi-configapi-validator/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
