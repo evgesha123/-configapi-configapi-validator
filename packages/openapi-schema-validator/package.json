@@ -4,6 +4,11 @@
   "description": "A validator for OpenAPI documents.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "files": [
     "dist/**/*"
   ],
@@ -31,5 +36,5 @@
     "lodash.merge": "^4.6.1",
     "openapi-types": "^11.0.5"
   },
-  "gitHead": "a8c38bc0defad8ef65ae4e2ef25b21bbb0c46b21"
+  "gitHead": "1cd0fff1b859cdc4baeec51e647dac7ddfb00963"
 }

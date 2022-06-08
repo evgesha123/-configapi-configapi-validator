@@ -4,6 +4,11 @@
   "description": "Types for OpenAPI documents.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "prepare": "../../bin/tsc",
     "test-watch": "../../bin/tsc"
@@ -21,5 +26,5 @@
   "repository": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types",
   "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types#readme",
   "license": "MIT",
-  "gitHead": "a8c38bc0defad8ef65ae4e2ef25b21bbb0c46b21"
+  "gitHead": "1cd0fff1b859cdc4baeec51e647dac7ddfb00963"
 }
