@@ -397,8 +397,8 @@
         "affectsGlobalScope": false
       },
       "../../openapi-types/dist/index.d.ts": {
-        "version": "5c4625c9c572d3bbc2c265908a349946ab8a5ab3217bd3d38e7931395ceb45b8",
-        "signature": "5c4625c9c572d3bbc2c265908a349946ab8a5ab3217bd3d38e7931395ceb45b8",
+        "version": "70cc231e26e5587494614b27a254d67f69c8b805a1e70bd6c768aacd5c0fc351",
+        "signature": "70cc231e26e5587494614b27a254d67f69c8b805a1e70bd6c768aacd5c0fc351",
         "affectsGlobalScope": false
       },
       "../index.ts": {

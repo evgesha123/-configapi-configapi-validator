@@ -12,7 +12,7 @@ export declare namespace OpenAPI {
 }
 export declare namespace OpenAPIV3_1 {
     type Modify<T, R> = Omit<T, keyof R> & R;
-    type PathsWebhooksComponents<T> = {
+    type PathsWebhooksComponents<T extends {} = {}> = {
         paths: PathsObject<T>;
         webhooks: Record<string, PathItemObject | ReferenceObject>;
         components: ComponentsObject;
@@ -414,8 +414,32 @@ export declare namespace OpenAPIV3 {
         schema: ReferenceObject | ContentSchemaObject;
     }
     interface ComponentsObject {
-        schemas: {
-            [key: string]: ComponentsObjectSchema;
+        schemas?: {
+            [key: string]: ReferenceObject | SchemaObject;
+        };
+        responses?: {
+            [key: string]: ReferenceObject | ResponseObject;
+        };
+        parameters?: {
+            [key: string]: ReferenceObject | ParameterObject;
+        };
+        examples?: {
+            [key: string]: ReferenceObject | ExampleObject;
+        };
+        requestBodies?: {
+            [key: string]: ReferenceObject | RequestBodyObject;
+        };
+        headers?: {
+            [key: string]: ReferenceObject | HeaderObject;
+        };
+        securitySchemes?: {
+            [key: string]: ReferenceObject | SecuritySchemeObject;
+        };
+        links?: {
+            [key: string]: ReferenceObject | LinkObject;
+        };
+        callbacks?: {
+            [key: string]: ReferenceObject | CallbackObject;
         };
     }
     type SecuritySchemeObject = HttpSecurityScheme | ApiKeySecurityScheme | OAuth2SecurityScheme | OpenIdSecurityScheme;
