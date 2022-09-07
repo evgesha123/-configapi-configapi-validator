@@ -36,7 +36,7 @@ export namespace OpenAPI {
 export namespace OpenAPIV3_1 {
   type Modify<T, R> = Omit<T, keyof R> & R;
 
-  type PathsWebhooksComponents<T extends {} = {}> = {
+  type PathsWebhooksComponents<T> = {
     paths: PathsObject<T>;
     webhooks: Record<string, PathItemObject | ReferenceObject>;
     components: ComponentsObject;
@@ -558,15 +558,7 @@ export namespace OpenAPIV3 {
   }
 
   export interface ComponentsObject {
-    schemas?: { [key: string]: ReferenceObject | SchemaObject };
-    responses?: { [key: string]: ReferenceObject | ResponseObject };
-    parameters?: { [key: string]: ReferenceObject | ParameterObject };
-    examples?: { [key: string]: ReferenceObject | ExampleObject };
-    requestBodies?: { [key: string]: ReferenceObject | RequestBodyObject };
-    headers?: { [key: string]: ReferenceObject | HeaderObject };
-    securitySchemes?: { [key: string]: ReferenceObject | SecuritySchemeObject };
-    links?: { [key: string]: ReferenceObject | LinkObject };
-    callbacks?: { [key: string]: ReferenceObject | CallbackObject };
+    schemas: { [key: string]: ComponentsObjectSchema };
   }
 
   export type SecuritySchemeObject =
