@@ -3,118 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/.tonic_example.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/dist/ajv.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/ajv.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/ajv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/cache.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/async.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/equal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/error_classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/formats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/resolve.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/rules.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/schema_obj.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/ucs2length.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/compile/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/definition_schema.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/_limit.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/_limitItems.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/_limitLength.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/_limitProperties.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/allOf.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/anyOf.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/coerce.def" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/comment.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/const.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/contains.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/custom.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/defaults.def" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/definitions.def" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/dependencies.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/enum.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/errors.def" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/format.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/if.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/items.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/missing.def" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/multipleOf.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/not.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/oneOf.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/pattern.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/properties.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/propertyNames.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/ref.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/required.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/uniqueItems.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dot/validate.jst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/_limit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/_limitItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/_limitLength.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/_limitProperties.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/allOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/anyOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/comment.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/const.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/contains.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/dependencies.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/enum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/format.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/if.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/items.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/multipleOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/not.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/oneOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/pattern.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/properties.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/propertyNames.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/ref.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/required.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/uniqueItems.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/dotjs/validate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/keyword.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/refs/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/refs/json-schema-draft-04.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/refs/json-schema-draft-06.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/refs/json-schema-draft-07.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/lib/refs/json-schema-secure.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/compile-dots.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/prepare-tests" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/publish-built-version" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ajv/scripts/travis-gh-pages" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/spec/.eslintrc.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/spec/fixtures/schema.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/json-schema-traverse/spec/index.spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/index.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,21 +21,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;14.15.4&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;14.18.20&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/user/WebstormProjects/-configapi-configapi-validator&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/user/WebstormProjects/openapi-validator/node_modules/prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/user/WebstormProjects/-configapi-configapi-validator/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "javascript.nodejs.core.library.configured.version": "16.15.1",
+    "javascript.nodejs.core.library.typings.version": "16.11.57",
+    "last_opened_file_path": "/Users/user/WebstormProjects/-configapi-configapi-validator",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/user/WebstormProjects/openapi-validator/node_modules/prettier",
+    "ts.external.directory.path": "/Users/user/WebstormProjects/-configapi-configapi-validator/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -157,19 +45,29 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.cover">
-    <configuration name="bootstrap" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.publish">
+    <configuration name="clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="bootstrap" />
+        <script value="clean" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="cover" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" />
+    <configuration name="combine-coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="combine-coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="cover (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="cover" />
@@ -178,21 +76,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="prepare (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" />
+    <configuration name="coveralls" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="prepare" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="prepare" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/packages/openapi-types/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="prepare" />
+        <script value="coveralls" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -210,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.cover" />
-        <item itemvalue="npm.prepare (1)" />
-        <item itemvalue="npm.prepare" />
         <item itemvalue="npm.publish" />
-        <item itemvalue="npm.bootstrap" />
+        <item itemvalue="npm.coveralls" />
+        <item itemvalue="npm.combine-coverage" />
+        <item itemvalue="npm.cover (1)" />
+        <item itemvalue="npm.clean" />
       </list>
     </recent_temporary>
   </component>
