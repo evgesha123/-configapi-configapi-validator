@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="" />
+    <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,8 +25,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "javascript.nodejs.core.library.configured.version": "14.15.4",
-    "javascript.nodejs.core.library.typings.version": "14.18.20",
+    "javascript.nodejs.core.library.configured.version": "16.15.1",
+    "javascript.nodejs.core.library.typings.version": "16.11.57",
     "last_opened_file_path": "/Users/user/WebstormProjects/-configapi-configapi-validator",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -44,16 +46,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.publish">
-    <configuration name="bootstrap" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="bootstrap" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <configuration name="clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -64,21 +56,31 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="prepare (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" />
+    <configuration name="combine-coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="prepare" />
+        <script value="combine-coverage" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="prepare" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/packages/openapi-types/package.json" />
+    <configuration name="cover (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="prepare" />
+        <script value="cover" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="coveralls" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="coveralls" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -97,10 +99,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.publish" />
-        <item itemvalue="npm.bootstrap" />
+        <item itemvalue="npm.coveralls" />
+        <item itemvalue="npm.combine-coverage" />
+        <item itemvalue="npm.cover (1)" />
         <item itemvalue="npm.clean" />
-        <item itemvalue="npm.prepare (1)" />
-        <item itemvalue="npm.prepare" />
       </list>
     </recent_temporary>
   </component>
