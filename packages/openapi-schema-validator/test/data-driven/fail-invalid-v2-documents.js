@@ -5,21 +5,21 @@ module.exports = {
 
   apiDoc: {
     info: {
-      title: 'Some valid API document',
-      version: '1.0.0',
+      title: "Some valid API document",
+      version: "1.0.0",
     },
     paths: {},
   },
 
   errors: [
     {
-      instancePath: '',
-      keyword: 'required',
+      instancePath: "",
+      keyword: "required",
       message: "must have required property 'swagger'",
       params: {
-        missingProperty: 'swagger',
+        missingProperty: "swagger",
       },
-      schemaPath: '#/required',
+      schemaPath: "#/required",
     },
   ],
 };

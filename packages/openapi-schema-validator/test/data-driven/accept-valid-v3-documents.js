@@ -4,45 +4,45 @@ module.exports = {
   },
 
   apiDoc: {
-    configapi: '3.0.0',
+    configapi: "3.0.0",
     info: {
-      version: '1.0.0',
-      description: 'Some config description',
-      title: 'Title',
-      type: 'ad',
+      version: "1.0.0",
+      description: "Some config description",
+      title: "Title",
+      type: "ad",
       contact: {
-        name: 'name',
-        email: 'email',
+        name: "name",
+        email: "email",
       },
       license: {
-        name: 'MIT',
+        name: "MIT",
       },
     },
     content: {
-      schema : {
-        "ads": {
-          $ref: '#/components/schemas/Ads',
+      schema: {
+        ads: {
+          $ref: "#/components/schemas/Ads",
         },
-        required: ['ads'],
-      }
+        required: ["ads"],
+      },
     },
     components: {
       schemas: {
         Ads: {
           required: [
-            'bannerAdUnit',
-            'interstitialAdUnit',
-            'rewardedAdUnit',
-            'log',
-            'delayInterstitialInterstitial',
-            'delayRewardedInterstitial',
-            'isCreativeDebuggerEnabled',
-            'isShowMediationDebugger',
+            "bannerAdUnit",
+            "interstitialAdUnit",
+            "rewardedAdUnit",
+            "log",
+            "delayInterstitialInterstitial",
+            "delayRewardedInterstitial",
+            "isCreativeDebuggerEnabled",
+            "isShowMediationDebugger",
           ],
           properties: {
             bannerAdUnit: {
-              type: 'string',
-              example: 'c1de17789539fe68',
+              type: "string",
+              example: "c1de17789539fe68",
             },
             interstitialAdUnit: {
               type: "string",
@@ -53,46 +53,46 @@ module.exports = {
               example: "159bcdb837df30dc",
             },
             log: {
-              type: 'integer',
+              type: "integer",
               enum: [0, 1],
             },
             delayInterstitialInterstitial: {
-              type: 'integer',
+              type: "integer",
               example: 30,
             },
             delayRewardedInterstitial: {
-              type: 'integer',
+              type: "integer",
               example: 1,
             },
             isCreativeDebuggerEnabled: {
-              type: 'integer',
+              type: "integer",
               enum: [0, 1],
             },
             isShowMediationDebugger: {
-              type: 'integer',
+              type: "integer",
               enum: [0, 1],
             },
-            banner : {
-              $ref: '#/components/schemas/BannerInterReward'
+            banner: {
+              $ref: "#/components/schemas/BannerInterReward",
             },
             interstitial: {
-              $ref: '#/components/schemas/BannerInterReward'
+              $ref: "#/components/schemas/BannerInterReward",
             },
             rewarded: {
-              $ref: '#/components/schemas/BannerInterReward'
+              $ref: "#/components/schemas/BannerInterReward",
             },
             settings: {
-              $ref: '#/components/schemas/Settings'
-            }
+              $ref: "#/components/schemas/Settings",
+            },
           },
         },
         BannerInterReward: {
-          type: 'object',
+          type: "object",
           properties: {
             bidders: {
               type: "array",
               items: {
-                $ref: '#/components/schemas/Bidder'
+                $ref: "#/components/schemas/Bidder",
               },
             },
             waterfallsDelays: {
@@ -100,43 +100,38 @@ module.exports = {
               items: {
                 type: "integer",
                 example: 30,
-              }
+              },
             },
             delayLongwaterfall: {
               type: "integer",
-              example: 30
-            }
-          }
+              example: 30,
+            },
+          },
         },
         Bidder: {
-          type: 'object',
-          required: ['name', 'params'],
+          type: "object",
+          required: ["name", "params"],
           properties: {
             name: {
               type: "string",
-              example: 'amazon',
+              example: "amazon",
             },
             params: {
-              $ref: '#/components/schemas/Bidder'
+              $ref: "#/components/schemas/Bidder",
             },
-          }
+          },
         },
         BidderParams: {
-          type: 'object',
-          required: [
-            'appKey',
-            'slotUUID',
-            'isTest',
-            'limitRequest',
-          ],
+          type: "object",
+          required: ["appKey", "slotUUID", "isTest", "limitRequest"],
           properties: {
             appKey: {
               type: "string",
-              example: '8d5d66458587426aae9ac27e84f49718',
+              example: "8d5d66458587426aae9ac27e84f49718",
             },
             slotUUID: {
               type: "string",
-              example: 'd055bef4-8671-4e6c-8e52-d710e6ecef3b',
+              example: "d055bef4-8671-4e6c-8e52-d710e6ecef3b",
             },
             isTest: {
               type: "integer",
@@ -146,18 +141,18 @@ module.exports = {
               type: "integer",
               example: 15,
             },
-          }
+          },
         },
         Settings: {
-          type: 'object',
-          required: ['isBannerAdaptive'],
+          type: "object",
+          required: ["isBannerAdaptive"],
           properties: {
             isBannerAdaptive: {
-              type: 'integer',
+              type: "integer",
               enum: [0, 1],
-            }
-          }
-        }
+            },
+          },
+        },
       },
     },
   },
