@@ -1,9 +1,9 @@
-import ajv, { ValidateFunction, ErrorObject } from 'ajv';
-import addFormats from 'ajv-formats';
-const openapi2Schema = require('./resources/openapi-2.0.json');
-const openapi3Schema = require('./resources/openapi-3.0.json');
-const merge = require('lodash.merge');
-import { IJsonSchema, OpenAPI } from 'openapi-types';
+import ajv, { ValidateFunction, ErrorObject } from "ajv";
+import addFormats from "ajv-formats";
+const openapi2Schema = require("./resources/openapi-2.0.json");
+const openapi3Schema = require("./resources/openapi-3.0.json");
+const merge = require("lodash.merge");
+import { IJsonSchema, OpenAPI } from "openapi-types";
 
 export interface IOpenAPISchemaValidator {
   /**

@@ -6,10 +6,10 @@ module.exports = {
         schema: {
           properties: {
             oneOf: {
-              type: 'array',
+              type: "array",
               minItems: 1,
               items: {
-                $ref: '#/definitions/schema',
+                $ref: "#/definitions/schema",
               },
             },
           },
@@ -19,16 +19,16 @@ module.exports = {
   },
 
   apiDoc: {
-    swagger: '2.0',
+    swagger: "2.0",
     info: {
-      title: 'Some valid API document',
-      version: '1.0.0',
+      title: "Some valid API document",
+      version: "1.0.0",
     },
     definitions: {
       User: {
         properties: {
           name: {
-            oneOf: [{ type: 'string' }, { type: 'null' }],
+            oneOf: [{ type: "string" }, { type: "null" }],
           },
         },
       },
