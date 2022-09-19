@@ -396,9 +396,9 @@
         "signature": "19ab78c1376c16e18c5b87dfa750813c935f0c4ce1d6ef88058ec38f9cf5ef08",
         "affectsGlobalScope": false
       },
-      "../node_modules/openapi-types/dist/index.d.ts": {
-        "version": "70db402e087104f9141f49564ed61f8e5616084e70ba27d0dee3756168cbb8a9",
-        "signature": "70db402e087104f9141f49564ed61f8e5616084e70ba27d0dee3756168cbb8a9",
+      "../../openapi-types/dist/index.d.ts": {
+        "version": "5c4625c9c572d3bbc2c265908a349946ab8a5ab3217bd3d38e7931395ceb45b8",
+        "signature": "5c4625c9c572d3bbc2c265908a349946ab8a5ab3217bd3d38e7931395ceb45b8",
         "affectsGlobalScope": false
       },
       "../index.ts": {
@@ -1320,9 +1320,9 @@
         "../../../node_modules/@types/node/ts3.2/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts",
         "../../../node_modules/@types/node/util.d.ts",
+        "../../openapi-types/dist/index.d.ts",
         "../node_modules/ajv-formats/dist/index.d.ts",
-        "../node_modules/ajv/dist/ajv.d.ts",
-        "../node_modules/openapi-types/dist/index.d.ts"
+        "../node_modules/ajv/dist/ajv.d.ts"
       ],
       "../node_modules/ajv-formats/dist/formats.d.ts": [
         "../../../node_modules/@types/node/fs.d.ts",
@@ -1724,13 +1724,13 @@
         "../../../node_modules/@types/node/util.d.ts",
         "../node_modules/ajv/dist/types/index.d.ts"
       ],
-      "../node_modules/openapi-types/dist/index.d.ts": [
+      "../node_modules/uri-js/dist/es5/uri.all.d.ts": [
         "../../../node_modules/@types/node/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts",
         "../../../node_modules/@types/node/util.d.ts"
       ],
-      "../node_modules/uri-js/dist/es5/uri.all.d.ts": [
+      "../../openapi-types/dist/index.d.ts": [
         "../../../node_modules/@types/node/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts",
@@ -2761,13 +2761,13 @@
         "../../../node_modules/@types/node/util.d.ts",
         "../node_modules/ajv/dist/types/index.d.ts"
       ],
-      "../node_modules/openapi-types/dist/index.d.ts": [
+      "../node_modules/uri-js/dist/es5/uri.all.d.ts": [
         "../../../node_modules/@types/node/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts",
         "../../../node_modules/@types/node/util.d.ts"
       ],
-      "../node_modules/uri-js/dist/es5/uri.all.d.ts": [
+      "../../openapi-types/dist/index.d.ts": [
         "../../../node_modules/@types/node/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/fs.d.ts",
         "../../../node_modules/@types/node/ts3.2/util.d.ts",
@@ -2910,8 +2910,8 @@
       "../node_modules/ajv/dist/vocabularies/validation/pattern.d.ts",
       "../node_modules/ajv/dist/vocabularies/validation/required.d.ts",
       "../node_modules/ajv/dist/vocabularies/validation/uniqueitems.d.ts",
-      "../node_modules/openapi-types/dist/index.d.ts",
-      "../node_modules/uri-js/dist/es5/uri.all.d.ts"
+      "../node_modules/uri-js/dist/es5/uri.all.d.ts",
+      "../../openapi-types/dist/index.d.ts"
     ]
   },
   "version": "4.2.4"
