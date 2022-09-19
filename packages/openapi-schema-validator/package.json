@@ -31,8 +31,8 @@
   },
   "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-schema-validator#readme",
   "dependencies": {
-    "ajv": "^8.1.0",
-    "ajv-formats": "^2.0.2",
+    "ajv": "^8.11.0",
+    "ajv-formats": "^2.1.1",
     "lodash.merge": "^4.6.1",
     "openapi-types": "^11.0.4"
   },
