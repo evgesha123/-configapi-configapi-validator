@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.76% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/17</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.76% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/17</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -106,9 +106,9 @@
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -128,35 +128,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import ajv, { ValidateFunction, ErrorObject } from "ajv";
-import addFormats from "ajv-formats";
-const openapi2Schema = <span class="cstat-no" title="statement not covered" >require("./resources/openapi-2.0.json");</span>
-const openapi3Schema = <span class="cstat-no" title="statement not covered" >require("./resources/openapi-3.0.json");</span>
-const merge = <span class="cstat-no" title="statement not covered" >require("lodash.merge");</span>
-import { IJsonSchema, OpenAPI } from "openapi-types";
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import ajv, { ValidateFunction, ErrorObject } from 'ajv';
+import addFormats from 'ajv-formats';
+const openapi2Schema = require('./resources/openapi-2.0.json');
+const openapi3Schema = require('./resources/openapi-3.0.json');
+const merge = require('lodash.merge');
+import { IJsonSchema, OpenAPI } from 'openapi-types';
 &nbsp;
 export interface IOpenAPISchemaValidator {
   /**
@@ -175,29 +175,29 @@ export interface OpenAPISchemaValidatorResult {
   errors: ErrorObject[];
 }
 &nbsp;
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >export default class OpenAPISchemaValidator implements IOpenAPISchemaValidator {</span></span>
+export default class OpenAPISchemaValidator implements IOpenAPISchemaValidator {
   private validator: ValidateFunction;
-<span class="fstat-no" title="function not covered" >  constructor(a</span>rgs: OpenAPISchemaValidatorArgs) {
-    const v = <span class="cstat-no" title="statement not covered" >new ajv({ allErrors: true, strict: false });</span>
-<span class="cstat-no" title="statement not covered" >    addFormats(v);</span>
-    const version = <span class="cstat-no" title="statement not covered" >(args &amp;&amp; parseInt(String(args.version), 10)) || 2;</span>
-    const schema = <span class="cstat-no" title="statement not covered" >merge(</span>
+  constructor(args: OpenAPISchemaValidatorArgs) {
+    const v = new ajv({ allErrors: true, strict: false });
+    addFormats(v);
+    const version = (args &amp;&amp; parseInt(String(args.version), 10)) || 2;
+    const schema = merge(
       {},
       version === 2 ? openapi2Schema : openapi3Schema,
       args ? args.extensions : {}
     );
-<span class="cstat-no" title="statement not covered" >    v.addSchema(schema);</span>
-<span class="cstat-no" title="statement not covered" >    this.validator = v.compile(schema);</span>
+    v.addSchema(schema);
+    this.validator = v.compile(schema);
   }
 &nbsp;
-<span class="fstat-no" title="function not covered" >  public <span class="cstat-no" title="statement not covered" >v</span>alidate(openapiDoc: OpenAPI.Document): OpenAPISchemaValidatorResult {</span>
-<span class="cstat-no" title="statement not covered" >    if (!this.validator(openapiDoc)) {</span>
-<span class="cstat-no" title="statement not covered" >      return { errors: this.validator.errors };</span>
+  public validate(openapiDoc: OpenAPI.Document): OpenAPISchemaValidatorResult {
+    if (!this.validator(openapiDoc)) {
+      return { errors: this.validator.errors };
     } else {
-<span class="cstat-no" title="statement not covered" >      return { errors: [] };</span>
+      return { errors: [] };
     }
   }
-<span class="cstat-no" title="statement not covered" >}</span>
+}
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -205,7 +205,7 @@ export interface OpenAPISchemaValidatorResult {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Mon Sep 19 2022 15:39:25 GMT+0200 (Central European Summer Time)
+                at Mon Sep 19 2022 15:52:43 GMT+0200 (Central European Summer Time)
             </div>
         </div>
         <script src="prettify.js"></script>
