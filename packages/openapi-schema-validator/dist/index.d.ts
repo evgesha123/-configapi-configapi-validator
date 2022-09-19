@@ -1,5 +1,5 @@
-import { ErrorObject } from 'ajv';
-import { IJsonSchema, OpenAPI } from 'openapi-types';
+import { ErrorObject } from "ajv";
+import { IJsonSchema, OpenAPI } from "openapi-types";
 export interface IOpenAPISchemaValidator {
     /**
      * Validate the provided OpenAPI doc against this validator's schema version and
