@@ -157,5 +157,15 @@ module.exports = {
     },
   },
 
-  errors: [],
+  errors: [
+    {
+      instancePath: "/content/schema",
+      keyword: "additionalProperties",
+      message: "must NOT have additional properties",
+      params: {
+        additionalProperty: "ads",
+      },
+      schemaPath: "#/additionalProperties",
+    },
+  ],
 };
