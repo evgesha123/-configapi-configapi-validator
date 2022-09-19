@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +22,6 @@
     <setting file="file://$PROJECT_DIR$/packages/openapi-schema-validator/index.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/openapi-schema-validator/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/openapi-schema-validator/test/data-driven/accept-valid-v3-documents.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/packages/openapi-types/dist/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/openapi-types/index.ts" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/packages/openapi-types/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tslint.json" root0="FORCE_HIGHLIGHTING" />
@@ -56,31 +60,21 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.publish">
-    <configuration name="bootstrap" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="combine-coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="bootstrap" />
+        <script value="combine-coverage" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="clean" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="coveralls" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="clean" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="cover (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="cover" />
+        <script value="coveralls" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -106,13 +100,23 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.publish" />
-        <item itemvalue="npm.clean" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.coveralls" />
+        <item itemvalue="npm.combine-coverage" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.cover (1)" />
-        <item itemvalue="npm.bootstrap" />
       </list>
     </recent_temporary>
   </component>
