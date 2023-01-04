@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package.json" afterDir="false" />
     </list>
@@ -40,9 +40,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "javascript.nodejs.core.library.configured.version": "16.15.1",
-    "javascript.nodejs.core.library.typings.version": "16.11.59",
+    "javascript.nodejs.core.library.typings.version": "16.18.11",
     "last_opened_file_path": "/Users/user/WebstormProjects/-configapi-configapi-validator",
+    "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/user/WebstormProjects/openapi-validator/node_modules/prettier",
@@ -70,11 +72,11 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="coveralls" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="cover" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" />
       <command value="run" />
       <scripts>
-        <script value="coveralls" />
+        <script value="cover" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -90,6 +92,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="prepare (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepare" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -100,23 +112,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="npm.publish" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="npm.coveralls" />
         <item itemvalue="npm.combine-coverage" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.prepare (1)" />
+        <item itemvalue="npm.cover" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +143,7 @@
         <option value="Default.Author" />
         <option value="Default.Date" />
         <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
       </list>
     </option>
   </component>

@@ -1,6 +1,6 @@
 {
   "name": "openapi-types",
-  "version": "12.0.1",
+  "version": "12.1.0",
   "description": "Types for OpenAPI documents.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -19,12 +19,12 @@
     "types",
     "typescript"
   ],
-  "author": "Joseph Spencer",
+  "author": "Eugene Leonov",
   "bugs": {
     "url": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types#readme/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aopenapi-types"
   },
   "repository": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types",
   "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types#readme",
   "license": "MIT",
-  "gitHead": "682830f3a915d18e91454f15a19a97d5dbe44262"
+  "gitHead": "139722adc18402d12a47f447a294dec667d57891"
 }
