@@ -24,17 +24,17 @@
     "schema",
     "validator"
   ],
-  "author": "Joseph Spencer",
+  "author": "Eugene Leonov",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/evgesha123/-configapi-configapi-validator/issues"
   },
   "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-schema-validator#readme",
   "dependencies": {
-    "ajv": "^8.11.0",
+    "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
     "lodash.merge": "^4.6.1",
-    "openapi-types": "^12.0.1"
+    "openapi-types": "^12.1.0"
   },
   "gitHead": "682830f3a915d18e91454f15a19a97d5dbe44262"
 }

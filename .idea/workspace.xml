@@ -1,12 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="24b52ddd-21b6-4777-9d91-3b19d54ca665" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lerna.json" beforeDir="false" afterPath="$PROJECT_DIR$/lerna.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/.nyc_output/e74910c5-2041-497b-a366-a66f1a758e66.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/.nyc_output/processinfo/e74910c5-2041-497b-a366-a66f1a758e66.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/.nyc_output/processinfo/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/.nyc_output/processinfo/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/resources/openapi-3.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/resources/openapi-3.0.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/dist/tsconfig.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-08a1eb46bf9666a2b44ea51428c89d9920579a936a442cfe5fd2064e76429186.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-08a1eb46bf9666a2b44ea51428c89d9920579a936a442cfe5fd2064e76429186.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-4cca11d75aece94d1fe4df0dbd221c75b19af379bbcb627b07c3739058c1a2cd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.cache/nyc/index-4cca11d75aece94d1fe4df0dbd221c75b19af379bbcb627b07c3739058c1a2cd.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2019.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2019.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2019.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2019.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2019.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2019.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2020.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2020.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2020.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2020.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2020.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/2020.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/ajv.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/ajv.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/ajv.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/ajv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/ajv.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/ajv.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/codegen/code.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/codegen/code.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/codegen/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/codegen/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/codegen/scope.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/codegen/scope.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/jtd/serialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/jtd/serialize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/jtd/serialize.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/jtd/serialize.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/jtd/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/jtd/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/resolve.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/resolve.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/rules.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/rules.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/util.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/util.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/dataType.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/dataType.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/subschema.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/compile/validate/subschema.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/core.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/core.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/jtd.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/jtd.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/jtd.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/jtd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/jtd.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/jtd.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/runtime/equal.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/runtime/equal.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/runtime/re2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/runtime/re2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/runtime/uri.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/runtime/uri.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/types/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/types/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/types/json-schema.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/types/json-schema.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/types/jtd-schema.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/types/jtd-schema.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/additionalItems.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/additionalItems.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/additionalProperties.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/additionalProperties.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/anyOf.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/anyOf.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/contains.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/contains.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/dependencies.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/dependencies.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/if.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/if.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/items2020.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/items2020.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/not.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/not.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/oneOf.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/oneOf.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/propertyNames.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/applicator/propertyNames.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/discriminator/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/discriminator/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/discriminator/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/discriminator/types.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/errors.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/errors.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/format/format.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/format/format.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/discriminator.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/discriminator.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/elements.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/elements.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/enum.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/enum.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/error.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/error.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/properties.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/properties.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/properties.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/properties.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/properties.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/properties.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/type.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/type.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/values.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/values.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/values.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/values.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/values.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/jtd/values.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/unevaluated/unevaluatedItems.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/unevaluated/unevaluatedItems.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/unevaluated/unevaluatedProperties.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/unevaluated/unevaluatedProperties.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/const.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/const.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/dependentRequired.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/dependentRequired.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/enum.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/enum.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/limitNumber.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/limitNumber.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/multipleOf.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/multipleOf.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/pattern.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/pattern.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/required.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/required.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/uniqueItems.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/dist/vocabularies/validation/uniqueItems.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/2019.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/2019.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/2020.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/2020.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/ajv.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/ajv.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/compile/jtd/serialize.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/compile/jtd/serialize.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/compile/validate/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/compile/validate/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/jtd.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/jtd.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/types/json-schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/types/json-schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/types/jtd-schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/types/jtd-schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/vocabularies/jtd/properties.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/vocabularies/jtd/properties.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/vocabularies/jtd/values.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/lib/vocabularies/jtd/values.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/ajv/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/dist/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/node_modules/openapi-types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-schema-validator/resources/openapi-3.0.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/dist/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/dist/tsconfig.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/openapi-types/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/openapi-types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/openapi-types/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,9 +145,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "javascript.nodejs.core.library.configured.version": "16.15.1",
-    "javascript.nodejs.core.library.typings.version": "16.11.59",
+    "javascript.nodejs.core.library.typings.version": "16.18.11",
     "last_opened_file_path": "/Users/user/WebstormProjects/-configapi-configapi-validator",
+    "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/user/WebstormProjects/openapi-validator/node_modules/prettier",
@@ -59,22 +166,12 @@
       <recent name="$PROJECT_DIR$/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.publish">
-    <configuration name="combine-coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+  <component name="RunManager" selected="npm.lint">
+    <configuration name="cover" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" />
       <command value="run" />
       <scripts>
-        <script value="combine-coverage" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="coveralls" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="coveralls" />
+        <script value="cover" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -90,6 +187,26 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="prepare (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/openapi-schema-validator/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepare" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prepare" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/packages/openapi-types/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prepare" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="publish" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -100,23 +217,13 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.publish" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="npm.coveralls" />
-        <item itemvalue="npm.combine-coverage" />
         <item itemvalue="npm.lint" />
+        <item itemvalue="npm.prepare (1)" />
+        <item itemvalue="npm.cover" />
+        <item itemvalue="npm.prepare" />
+        <item itemvalue="npm.publish" />
       </list>
     </recent_temporary>
   </component>

@@ -9,10 +9,6 @@ export namespace OpenAPI {
     | OpenAPIV2.Document<T>
     | OpenAPIV3.Document<T>
     | OpenAPIV3_1.Document<T>;
-  export type Operation<T extends {} = {}> =
-    | OpenAPIV2.OperationObject<T>
-    | OpenAPIV3.OperationObject<T>
-    | OpenAPIV3_1.OperationObject<T>;
   export type Parameter =
     | OpenAPIV3_1.ReferenceObject
     | OpenAPIV3_1.ParameterObject
@@ -24,21 +20,13 @@ export namespace OpenAPI {
     | (OpenAPIV3_1.ReferenceObject | OpenAPIV3_1.ParameterObject)[]
     | (OpenAPIV3.ReferenceObject | OpenAPIV3.ParameterObject)[]
     | (OpenAPIV2.ReferenceObject | OpenAPIV2.Parameter)[];
-
-  export interface Request {
-    body?: any;
-    headers?: object;
-    params?: object;
-    query?: object;
-  }
 }
 
 export namespace OpenAPIV3_1 {
   type Modify<T, R> = Omit<T, keyof R> & R;
 
   type PathsWebhooksComponents<T> = {
-    paths: PathsObject<T>;
-    webhooks: Record<string, PathItemObject | ReferenceObject>;
+    webhooks: Record<string, ReferenceObject>;
     components: ComponentsObject;
   };
 
@@ -47,7 +35,6 @@ export namespace OpenAPIV3_1 {
     {
       info: InfoObject;
       jsonSchemaDialect?: string;
-      servers?: ServerObject[];
     } & (
       | (Pick<PathsWebhooksComponents<T>, "webhooks"> &
           Omit<Partial<PathsWebhooksComponents<T>>, "webhooks">)
@@ -73,57 +60,9 @@ export namespace OpenAPIV3_1 {
     }
   >;
 
-  export type ServerObject = Modify<
-    OpenAPIV3.ServerObject,
-    {
-      url: string;
-      description?: string;
-      variables?: Record<string, ServerVariableObject>;
-    }
-  >;
-
-  export type ServerVariableObject = Modify<
-    OpenAPIV3.ServerVariableObject,
-    {
-      enum?: [string, ...string[]];
-    }
-  >;
-
-  export type PathsObject<T extends {} = {}, P extends {} = {}> = Record<
-    string,
-    (PathItemObject<T> & P) | undefined
-  >;
-
-  export type HttpMethods = OpenAPIV3.HttpMethods;
-
-  export type PathItemObject<T extends {} = {}> = Modify<
-    OpenAPIV3.PathItemObject<T>,
-    {
-      servers?: ServerObject[];
-      parameters?: (ReferenceObject | ParameterObject)[];
-    }
-  > &
-    {
-      [method in HttpMethods]?: OperationObject<T>;
-    };
-
-  export type OperationObject<T extends {} = {}> = Modify<
-    OpenAPIV3.OperationObject<T>,
-    {
-      parameters?: (ReferenceObject | ParameterObject)[];
-      requestBody?: ReferenceObject | RequestBodyObject;
-      responses?: ResponsesObject;
-      callbacks?: Record<string, ReferenceObject | CallbackObject>;
-      servers?: ServerObject[];
-    }
-  > &
-    T;
-
   export type ExternalDocumentationObject = OpenAPIV3.ExternalDocumentationObject;
 
   export type ParameterObject = OpenAPIV3.ParameterObject;
-
-  export type HeaderObject = OpenAPIV3.HeaderObject;
 
   export type ParameterBaseObject = OpenAPIV3.ParameterBaseObject;
 
@@ -201,53 +140,12 @@ export namespace OpenAPIV3_1 {
     }
   >;
 
-  export type EncodingObject = OpenAPIV3.EncodingObject;
-
-  export type RequestBodyObject = Modify<
-    OpenAPIV3.RequestBodyObject,
-    {
-      content: { [media: string]: MediaTypeObject };
-    }
-  >;
-
-  export type ResponsesObject = Record<
-    string,
-    ReferenceObject | ResponseObject
-  >;
-
-  export type ResponseObject = Modify<
-    OpenAPIV3.ResponseObject,
-    {
-      headers?: { [header: string]: ReferenceObject | HeaderObject };
-      content?: { [media: string]: MediaTypeObject };
-      links?: { [link: string]: ReferenceObject | LinkObject };
-    }
-  >;
-
-  export type LinkObject = Modify<
-    OpenAPIV3.LinkObject,
-    {
-      server?: ServerObject;
-    }
-  >;
-
-  export type CallbackObject = Record<string, PathItemObject | ReferenceObject>;
-
-  export type SecurityRequirementObject = OpenAPIV3.SecurityRequirementObject;
-
   export type ComponentsObject = Modify<
     OpenAPIV3.ComponentsObject,
     {
       schemas?: Record<string, SchemaObject>;
-      responses?: Record<string, ReferenceObject | ResponseObject>;
       parameters?: Record<string, ReferenceObject | ParameterObject>;
       examples?: Record<string, ReferenceObject | ExampleObject>;
-      requestBodies?: Record<string, ReferenceObject | RequestBodyObject>;
-      headers?: Record<string, ReferenceObject | HeaderObject>;
-      securitySchemes?: Record<string, ReferenceObject | SecuritySchemeObject>;
-      links?: Record<string, ReferenceObject | LinkObject>;
-      callbacks?: Record<string, ReferenceObject | CallbackObject>;
-      pathItems?: Record<string, ReferenceObject | PathItemObject>;
     }
   >;
 
@@ -255,40 +153,18 @@ export namespace OpenAPIV3_1 {
     OpenAPIV3.ContentObject,
     {
       schemas?: Record<string, SchemaObject>;
-      responses?: Record<string, ReferenceObject | ResponseObject>;
       parameters?: Record<string, ReferenceObject | ParameterObject>;
       examples?: Record<string, ReferenceObject | ExampleObject>;
-      requestBodies?: Record<string, ReferenceObject | RequestBodyObject>;
-      headers?: Record<string, ReferenceObject | HeaderObject>;
-      securitySchemes?: Record<string, ReferenceObject | SecuritySchemeObject>;
-      links?: Record<string, ReferenceObject | LinkObject>;
-      callbacks?: Record<string, ReferenceObject | CallbackObject>;
-      pathItems?: Record<string, ReferenceObject | PathItemObject>;
     }
   >;
-
-  export type SecuritySchemeObject = OpenAPIV3.SecuritySchemeObject;
-
-  export type HttpSecurityScheme = OpenAPIV3.HttpSecurityScheme;
-
-  export type ApiKeySecurityScheme = OpenAPIV3.ApiKeySecurityScheme;
-
-  export type OAuth2SecurityScheme = OpenAPIV3.OAuth2SecurityScheme;
-
-  export type OpenIdSecurityScheme = OpenAPIV3.OpenIdSecurityScheme;
-
-  export type TagObject = OpenAPIV3.TagObject;
 }
 
 export namespace OpenAPIV3 {
   export interface Document<T extends {} = {}> {
     configapi: string;
     info: InfoObject;
-    servers?: ServerObject[];
     content: ContentObject;
     components: ComponentsObject;
-    security?: SecurityRequirementObject[];
-    tags?: TagObject[];
     externalDocs?: ExternalDocumentationObject;
     "x-express-openapi-additional-middleware"?: (
       | ((request: any, response: any, next: any) => Promise<void>)
@@ -318,60 +194,13 @@ export namespace OpenAPIV3 {
     url?: string;
   }
 
-  export interface ServerObject {
-    url: string;
-    description?: string;
-    variables?: { [variable: string]: ServerVariableObject };
-  }
-
-  export interface ServerVariableObject {
-    enum?: string[];
-    default: string;
-    description?: string;
-  }
-
-  export interface PathsObject<T extends {} = {}, P extends {} = {}> {
-    [pattern: string]: (PathItemObject<T> & P) | undefined;
-  }
-
-  // All HTTP methods allowed by OpenAPI 3 spec
-  // See https://swagger.io/specification/#path-item-object
-  // You can use keys or values from it in TypeScript code like this:
-  //     for (const method of Object.values(OpenAPIV3.HttpMethods)) { … }
-  export enum HttpMethods {
-    GET = "get",
-    PUT = "put",
-    POST = "post",
-    DELETE = "delete",
-    OPTIONS = "options",
-    HEAD = "head",
-    PATCH = "patch",
-    TRACE = "trace",
-  }
-
-  export type PathItemObject<T extends {} = {}> = {
-    $ref?: string;
-    summary?: string;
-    description?: string;
-    servers?: ServerObject[];
-    parameters?: (ReferenceObject | ParameterObject)[];
-  } & {
-    [method in HttpMethods]?: OperationObject<T>;
-  };
-
   export type OperationObject<T extends {} = {}> = {
-    tags?: string[];
     summary?: string;
     description?: string;
     externalDocs?: ExternalDocumentationObject;
     operationId?: string;
     parameters?: (ReferenceObject | ParameterObject)[];
-    requestBody?: ReferenceObject | RequestBodyObject;
-    responses: ResponsesObject;
-    callbacks?: { [callback: string]: ReferenceObject | CallbackObject };
     deprecated?: boolean;
-    security?: SecurityRequirementObject[];
-    servers?: ServerObject[];
   } & T;
 
   export interface ExternalDocumentationObject {
@@ -507,49 +336,6 @@ export namespace OpenAPIV3 {
     schema?: ReferenceObject | SchemaObject;
     example?: any;
     examples?: { [media: string]: ReferenceObject | ExampleObject };
-    encoding?: { [media: string]: EncodingObject };
-  }
-
-  export interface EncodingObject {
-    contentType?: string;
-    headers?: { [header: string]: ReferenceObject | HeaderObject };
-    style?: string;
-    explode?: boolean;
-    allowReserved?: boolean;
-  }
-
-  export interface RequestBodyObject {
-    description?: string;
-    content: { [media: string]: MediaTypeObject };
-    required?: boolean;
-  }
-
-  export interface ResponsesObject {
-    [code: string]: ReferenceObject | ResponseObject;
-  }
-
-  export interface ResponseObject {
-    description: string;
-    headers?: { [header: string]: ReferenceObject | HeaderObject };
-    content?: { [media: string]: MediaTypeObject };
-    links?: { [link: string]: ReferenceObject | LinkObject };
-  }
-
-  export interface LinkObject {
-    operationRef?: string;
-    operationId?: string;
-    parameters?: { [parameter: string]: any };
-    requestBody?: any;
-    description?: string;
-    server?: ServerObject;
-  }
-
-  export interface CallbackObject {
-    [url: string]: PathItemObject;
-  }
-
-  export interface SecurityRequirementObject {
-    [name: string]: string[];
   }
 
   // Custom Content Object
@@ -560,96 +346,23 @@ export namespace OpenAPIV3 {
   export interface ComponentsObject {
     schemas: { [key: string]: ComponentsObjectSchema };
   }
-
-  export type SecuritySchemeObject =
-    | HttpSecurityScheme
-    | ApiKeySecurityScheme
-    | OAuth2SecurityScheme
-    | OpenIdSecurityScheme;
-
-  export interface HttpSecurityScheme {
-    type: "http";
-    description?: string;
-    scheme: string;
-    bearerFormat?: string;
-  }
-
-  export interface ApiKeySecurityScheme {
-    type: "apiKey";
-    description?: string;
-    name: string;
-    in: string;
-  }
-
-  export interface OAuth2SecurityScheme {
-    type: "oauth2";
-    description?: string;
-    flows: {
-      implicit?: {
-        authorizationUrl: string;
-        refreshUrl?: string;
-        scopes: { [scope: string]: string };
-      };
-      password?: {
-        tokenUrl: string;
-        refreshUrl?: string;
-        scopes: { [scope: string]: string };
-      };
-      clientCredentials?: {
-        tokenUrl: string;
-        refreshUrl?: string;
-        scopes: { [scope: string]: string };
-      };
-      authorizationCode?: {
-        authorizationUrl: string;
-        tokenUrl: string;
-        refreshUrl?: string;
-        scopes: { [scope: string]: string };
-      };
-    };
-  }
-
-  export interface OpenIdSecurityScheme {
-    type: "openIdConnect";
-    description?: string;
-    openIdConnectUrl: string;
-  }
-
-  export interface TagObject {
-    name: string;
-    description?: string;
-    externalDocs?: ExternalDocumentationObject;
-  }
 }
 
 export namespace OpenAPIV2 {
   export interface Document<T extends {} = {}> {
     basePath?: string;
-    consumes?: MimeTypes;
     definitions?: DefinitionsObject;
     externalDocs?: ExternalDocumentationObject;
-    host?: string;
     info: InfoObject;
     parameters?: ParametersDefinitionsObject;
-    paths: PathsObject<T>;
-    produces?: MimeTypes;
-    responses?: ResponsesDefinitionsObject;
     schemes?: string[];
-    security?: SecurityRequirementObject[];
     securityDefinitions?: SecurityDefinitionsObject;
     swagger: string;
-    tags?: TagObject[];
     "x-express-openapi-additional-middleware"?: (
       | ((request: any, response: any, next: any) => Promise<void>)
       | ((request: any, response: any, next: any) => void)
     )[];
     "x-express-openapi-validation-strict"?: boolean;
-  }
-
-  export interface TagObject {
-    name: string;
-    description?: string;
-    externalDocs?: ExternalDocumentationObject;
   }
 
   export interface SecuritySchemeObjectBase {
@@ -717,19 +430,11 @@ export namespace OpenAPIV2 {
     [index: string]: SecuritySchemeObject;
   }
 
-  export interface SecurityRequirementObject {
-    [index: string]: string[];
-  }
-
   export interface ReferenceObject {
     $ref: string;
   }
 
   export type Response = ResponseObject | ReferenceObject;
-
-  export interface ResponsesDefinitionsObject {
-    [index: string]: ResponseObject;
-  }
 
   export type Schema = SchemaObject | ReferenceObject;
 
@@ -758,24 +463,14 @@ export namespace OpenAPIV2 {
   }
 
   export type OperationObject<T extends {} = {}> = {
-    tags?: string[];
     summary?: string;
     description?: string;
     externalDocs?: ExternalDocumentationObject;
     operationId?: string;
-    consumes?: MimeTypes;
-    produces?: MimeTypes;
     parameters?: Parameters;
-    responses: ResponsesObject;
     schemes?: string[];
     deprecated?: boolean;
-    security?: SecurityRequirementObject[];
   } & T;
-
-  export interface ResponsesObject {
-    [index: string]: Response | undefined;
-    default?: Response;
-  }
 
   export type Parameters = (ReferenceObject | Parameter)[];
 
@@ -787,31 +482,6 @@ export namespace OpenAPIV2 {
 
   export interface GeneralParameterObject extends ParameterObject, ItemsObject {
     allowEmptyValue?: boolean;
-  }
-
-  // All HTTP methods allowed by OpenAPI 2 spec
-  // See https://swagger.io/specification/v2#path-item-object
-  // You can use keys or values from it in TypeScript code like this:
-  //     for (const method of Object.values(OpenAPIV2.HttpMethods)) { … }
-  export enum HttpMethods {
-    GET = "get",
-    PUT = "put",
-    POST = "post",
-    DELETE = "delete",
-    OPTIONS = "options",
-    HEAD = "head",
-    PATCH = "patch",
-  }
-
-  export type PathItemObject<T extends {} = {}> = {
-    $ref?: string;
-    parameters?: Parameters;
-  } & {
-    [method in HttpMethods]?: OperationObject<T>;
-  };
-
-  export interface PathsObject<T extends {} = {}> {
-    [index: string]: PathItemObject<T>;
   }
 
   export interface ParametersDefinitionsObject {
