@@ -4,9 +4,8 @@
   "description": "Various packages to build OpenAPI APIs in node",
   "main": "index.js",
   "private": false,
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+  "publishConfig":{
+    "@configapi:registry": "https://gitlab.com/api/v4/projects/170/packages/npm/"
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
@@ -18,20 +17,12 @@
     "test": "lerna run test",
     "publish": "lerna publish"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/evgesha123/-configapi-configapi-validator.git"
-  },
   "keywords": [
     "openapi",
     "tools"
   ],
   "author": "Joseph Spencer, copied by Eugene Leonov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/evgesha123/-configapi-configapi-validator/issues"
-  },
-  "homepage": "https://github.com/evgesha123/-configapi-configapi-validator",
   "devDependencies": {
     "@types/mocha": "^7.0.0",
     "@types/node": "14.0.4",

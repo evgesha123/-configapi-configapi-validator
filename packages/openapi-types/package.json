@@ -1,13 +1,12 @@
 {
-  "name": "openapi-types",
+  "name": "@configapi/openapi-types",
   "version": "12.1.0",
   "description": "Types for OpenAPI documents.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "private": false,
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+  "publishConfig":{
+    "@configapi:registry": "https://gitlab.com/api/v4/projects/170/packages/npm/"
   },
   "scripts": {
     "prepare": "../../bin/tsc",
@@ -20,11 +19,6 @@
     "typescript"
   ],
   "author": "Eugene Leonov",
-  "bugs": {
-    "url": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types#readme/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aopenapi-types"
-  },
-  "repository": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types",
-  "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-types#readme",
   "license": "MIT",
   "gitHead": "139722adc18402d12a47f447a294dec667d57891"
 }

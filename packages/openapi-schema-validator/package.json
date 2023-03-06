@@ -1,13 +1,12 @@
 {
-  "name": "openapi-schema-validator",
+  "name": "@configapi/openapi-schema-validator",
   "version": "12.1.0",
   "description": "A validator for OpenAPI documents.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "private": false,
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+  "publishConfig":{
+    "@configapi:registry": "https://gitlab.com/api/v4/projects/170/packages/npm/"
   },
   "files": [
     "dist/**/*"
@@ -18,7 +17,6 @@
     "test-watch": "../../bin/tsc && ../../bin/mocha --watch-extensions ts -w",
     "test": "../../bin/mocha"
   },
-  "repository": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-schema-validator",
   "keywords": [
     "openapi",
     "schema",
@@ -26,10 +24,6 @@
   ],
   "author": "Eugene Leonov",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/evgesha123/-configapi-configapi-validator/issues"
-  },
-  "homepage": "https://github.com/evgesha123/-configapi-configapi-validator/blob/master/packages/openapi-schema-validator#readme",
   "dependencies": {
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
